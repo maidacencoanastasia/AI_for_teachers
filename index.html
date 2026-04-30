@@ -1,1145 +1,738 @@
 <!doctype html>
 <html lang="ro">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <title>Atelier AI pentru profesori de informatica</title>
-        <meta
-            name="description"
-            content="Workshop profesional pentru profesori de informatica: AI practic in educatie, prompt engineering, instrumente moderne si etica digitala." />
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-            rel="stylesheet" />
-        <link
-            rel="stylesheet"
-            href="styles.css" />
-    </head>
-    <body>
-        <div class="bg-layer bg-layer--one"></div>
-        <div class="bg-layer bg-layer--two"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier AI pentru profesori de informatica</title>
+    <meta name="description" content="Workshop profesional pentru profesori de informatica: AI practic in educatie, prompt engineering, instrumente moderne si etica digitala." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer bg-layer--one"></div>
+    <div class="bg-layer bg-layer--two"></div>
 
-        <header class="hero reveal">
-            <p class="hero__badge">Atelier de dezvoltare profesională</p>
-            <h1>Inteligenta Artificiala la Școala pentru profesori de informatica</h1>
-            <p class="hero__lead">
-                Un workshop aplicat pe scenarii reale: proiectare de lectii, evaluare, automatizare,
-                prompt engineering, etica și securitate digitala.
+    <header class="hero reveal">
+      <p class="hero__badge">Atelier de dezvoltare profesională</p>
+      <h1>Inteligenta Artificiala la Școala pentru profesori de informatica</h1>
+      <p class="hero__lead">Un workshop aplicat pe scenarii reale: proiectare de lectii, evaluare, automatizare, prompt engineering, etica și securitate digitala.</p>
+
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span>Data</span>
+          <strong>02.05.2026</strong>
+        </div>
+        <div class="hero__meta-item">
+          <span>Program</span>
+          <strong>10:30 - 12:00</strong>
+        </div>
+        <div class="hero__meta-item">
+          <span>Public tinta</span>
+          <strong>Profesori de informatica</strong>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#agenda"> Vezi agenda </a>
+        <a class="btn" href="#materiale"> Resurse workshop </a>
+        <a class="btn" href="https://forms.gle/6PnaqNmi5gHyntNW9" target="_blank" rel="noopener noreferrer"> Feedback Google Forms </a>
+      </div>
+
+      <nav class="hero__nav" aria-label="Navigare sectiuni">
+        <a href="#agenda">Agenda</a>
+        <a href="#speaker">Speaker</a>
+        <a href="#beneficii">Beneficii</a>
+        <a href="#materiale">Resurse</a>
+        <a href="#prompturi">Prompturi</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="agenda" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Programul evenimentului</p>
+          <h2>Agenda 10:30 - 12:00</h2>
+        </div>
+        <div class="agenda">
+          <article class="agenda__item reveal">
+            <span class="agenda__time">10:30</span>
+            <div>
+              <h3>Deschidere si context 2026</h3>
+              <p>Rolul AI in educatie, asteptari realiste si obiectivele atelierului.</p>
+            </div>
+          </article>
+          <article class="agenda__item reveal">
+            <span class="agenda__time">10:45</span>
+            <div>
+              <h3>AI News pentru profesori de informatica</h3>
+              <p>Ce este nou in 2026: asistenti multimodali, fluxuri rapide si lucru bazat pe surse.</p>
+            </div>
+          </article>
+          <article class="agenda__item reveal">
+            <span class="agenda__time">11:00</span>
+            <div>
+              <h3>Prompt engineering aplicat</h3>
+              <p>Formule eficiente pentru lectii de algoritmica, Python, C/C++ si proiecte software.</p>
+            </div>
+          </article>
+          <article class="agenda__item reveal">
+            <span class="agenda__time">11:20</span>
+            <div>
+              <h3>Instrumente + demonstratie de lectie interactiva</h3>
+              <p>GPT, Claude, Gemini, Perplexity, NotebookLM si scenarii concrete de predare.</p>
+            </div>
+          </article>
+          <article class="agenda__item reveal">
+            <span class="agenda__time">11:45</span>
+            <div>
+              <h3>Etica, siguranta, concluzii</h3>
+              <p>Integritate academica, protectia datelor elevilor si bune practici pentru utilizare responsabila.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="speaker" class="speaker reveal">
+        <div class="speaker__photo-wrap">
+          <img class="speaker__photo" src="anastasia_workshop.jpg" alt="Maidacenco Anastasia" />
+        </div>
+        <div class="speaker__content">
+          <p class="section-head__kicker">Speaker / Bio</p>
+          <h2>Maidacenco Anastasia</h2>
+          <p class="speaker__role">IT Specialist</p>
+          <p>
+            Specialist in C/C++, Python pentru Data Science, AI si dezvoltarea sistemelor complexe. Experiența in proiecte educaționale, traininguri pentru profesori si integrarea AI in curriculum.
+            Pasionată de transformarea digitala a educatiei si promovarea utilizarii responsabile a tehnologiei in școli.
+          </p>
+          <div class="tag-list">
+            <span>C/C++</span>
+            <span>Python</span>
+            <span>Data Science</span>
+            <span>AI in educatie</span>
+            <span>Prompt engineering</span>
+            <span>Etica digitala</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="misiune" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Rolul profesorului în era AI</p>
+          <h2>Misiunea Profesorului</h2>
+        </div>
+        <p class="lead-text">
+          În era inteligenței artificiale, misiunea profesorului nu dispare — ea se transformă profund. Nu mai ești doar furnizor de informație, ci ghid al gândirii critice, mentor al utilizării
+          responsabile a tehnologiei și facilitator al învățării profunde. AI poate genera conținut, dar nu poate forma caracterul sau cultiva curiozitatea.
+        </p>
+        <div class="mission-grid">
+          <article class="mission-card reveal">
+            <h3>Designer de experiențe</h3>
+            <p>Proiectezi lecții care nu pot fi înlocuite de un chatbot: dezbateri, experimente, colaborare reală, reflecție. AI devine un instrument în mâna profesorului, nu un rival.</p>
+          </article>
+          <article class="mission-card reveal">
+            <h3>Model de gândire critică</h3>
+            <p>Elevii au nevoie să vadă cum gândești, nu doar ce știi. Cum verifici o sursă, cum formulezi o întrebare bună, cum recunoști o eroare — acestea rămân apanajul profesorului.</p>
+          </article>
+          <article class="mission-card reveal">
+            <h3>Gardian al valorilor etice</h3>
+            <p>Integritate academică, empatie, responsabilitate digitală — valori pe care nicio rețea neuronală nu le poate preda. Profesorul rămâne busola morală a clasei.</p>
+          </article>
+          <article class="mission-card reveal">
+            <h3>Conector al lumii reale</h3>
+            <p>Leagă cunoașterea abstractă de contextele concrete din viața elevilor. Relevanța și motivația personală nu pot fi automatizate.</p>
+          </article>
+        </div>
+        <h3 class="subheading">Motivație și Disciplină în Era Distragerilor Digitale</h3>
+        <p class="lead-text">
+          Smartphone-urile, videoclipurile scurte și notificările continue au recablat creierul elevilor pentru gratificare imediată. Iată strategii dovedite pentru a menține atenția și motivația:
+        </p>
+        <div class="discover-grid">
+          <article class="discover-card reveal">
+            <h3>Micro-obiective clare</h3>
+            <p>Sparge activitățile mari în sarcini de 5–10 minute cu rezultate vizibile. Creierul elevilor are nevoie de feedback rapid — AI poate genera exerciții scurte și personalizate pe loc.</p>
+          </article>
+          <article class="discover-card reveal">
+            <h3>Relevanță imediată</h3>
+            <p>
+              Conectează fiecare lecție la un „de ce contează azi". Elevii motivați intern înlocuiesc disciplina externă cu autodisciplina. AI ajută la generarea de exemple actuale și contexte reale.
             </p>
+          </article>
+          <article class="discover-card reveal">
+            <h3>Autonomie ghidată</h3>
+            <p>
+              Oferă alegere în cadrul structurii: ce problemă să rezolve, ce instrument să folosească, cum să prezinte soluția. Autonomia crește motivația intrinsecă și face elevul proprietarul
+              procesului.
+            </p>
+          </article>
+          <article class="discover-card reveal">
+            <h3>Reguli clare pentru AI în clasă</h3>
+            <p>Stabilește împreună cu elevii când este permis AI, când nu și cum se citează contribuția lui. Claritatea regulilor reduce anxietatea și comportamentul evitant.</p>
+          </article>
+        </div>
+      </section>
 
-            <div class="hero__meta">
-                <div class="hero__meta-item">
-                    <span>Data</span>
-                    <strong>02.05.2026</strong>
-                </div>
-                <div class="hero__meta-item">
-                    <span>Program</span>
-                    <strong>10:30 - 12:00</strong>
-                </div>
-                <div class="hero__meta-item">
-                    <span>Public tinta</span>
-                    <strong>Profesori de informatica</strong>
-                </div>
+      <section id="beneficii" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Rezultate workshop</p>
+          <h2>Ce vei putea aplica imediat la clasa</h2>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card reveal">
+            <strong>70%</strong>
+            <p>reducere potentiala a timpului pentru sarcini repetitive de pregatire si evaluare</p>
+          </article>
+          <article class="metric-card reveal">
+            <strong>10+</strong>
+            <p>prompturi reutilizabile pentru algoritmi, debugging, proiecte si evaluari</p>
+          </article>
+          <article class="metric-card reveal">
+            <strong>90 min</strong>
+            <p>continut concentrat pentru profesori de informatica, fara teorie inutila</p>
+          </article>
+        </div>
+        <div class="discover-grid">
+          <article class="discover-card reveal">
+            <h3>Predare asistata de AI</h3>
+            <p>Creezi explicatii mai clare pentru concepte dificile: recursivitate, complexitate, structuri de date.</p>
+          </article>
+          <article class="discover-card reveal">
+            <h3>Evaluare mai rapida</h3>
+            <p>Generezi rubrici, mini-teste si feedback diferentiat pentru elevi cu niveluri diferite.</p>
+          </article>
+          <article class="discover-card reveal">
+            <h3>Lectii interactive</h3>
+            <p>Transformi ora de informatica in activitati de tip laborator, simulare si rezolvare colaborativa.</p>
+          </article>
+          <article class="discover-card reveal">
+            <h3>Etica si siguranta</h3>
+            <p>Aplici reguli clare pentru utilizarea responsabila a AI, citare, verificare si protectia datelor.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="materiale" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Resurse</p>
+          <h2>Materiale pentru lucru imediat</h2>
+        </div>
+        <div class="resource-grid">
+          <a class="resource" href="AI_for_Teachers.pdf" target="_blank">
+            <strong>Prezentare workshop (PDF)</strong>
+            <span>AI_for_Teachers.pdf</span>
+          </a>
+          <a class="resource" href="anastasia_workshop.jpg">
+            <strong>Imagine speaker</strong>
+            <span>anastasia_workshop.jpg</span>
+          </a>
+        </div>
+        <div class="feedback-box">
+          <p>Ajuta-ne sa imbunatatim urmatoarele editii ale atelierului.</p>
+          <a class="btn btn--primary" href="https://forms.gle/6PnaqNmi5gHyntNW9" target="_blank" rel="noopener noreferrer"> Trimite feedback in Google Forms </a>
+        </div>
+      </section>
+
+      <section id="prompturi" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Prompt engineering</p>
+          <h2>Prompturi profesionale pentru profesori de informatica</h2>
+        </div>
+
+        <div class="grid-two">
+          <article class="prompt-card reveal">
+            <h3>Formula standard</h3>
+            <ul class="list-clean">
+              <li>Rol: ce expert trebuie sa fie modelul</li>
+              <li>Obiectiv: ce rezultat exact doresti</li>
+              <li>Context: clasa, nivel, durata, curriculum</li>
+              <li>Constrangeri: format, limba, numar de itemi</li>
+              <li>Validare: criterii de calitate si verificare</li>
+            </ul>
+          </article>
+
+          <article class="prompt-card reveal">
+            <h3>Model scurt reutilizabil</h3>
+            <p class="prompt-snippet">
+              Esti profesor de informatica. Creeaza o lectie de 45 de minute pentru clasa a 9-a despre structuri repetitive in Python. Include obiective, exemplu explicat pas cu pas, 3 exercitii
+              graduale si barem scurt.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="subheading">Exemple pe discipline informatice</h3>
+        <div class="grid-two">
+          <article class="prompt-card reveal">
+            <h4>Algoritmica (gimnaziu)</h4>
+            <p class="prompt-snippet">
+              Esti mentor de algoritmica. Explica elevilor de clasa a 7-a notiunea de algoritm folosind 2 analogii simple, apoi propune 5 probleme usoare cu rezolvari orientative.
+            </p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>Python (liceu)</h4>
+            <p class="prompt-snippet">
+              Creeaza o activitate de laborator de 30 minute despre liste si dictionare in Python, cu date de intrare, output asteptat, 3 niveluri de dificultate si criterii de evaluare.
+            </p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>C/C++ (liceu)</h4>
+            <p class="prompt-snippet">Genereaza 4 exercitii progresive despre vectori in C++, fiecare cu explicatie a complexitatii, capcane frecvente si varianta optimizata.</p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>Debugging si code review</h4>
+            <p class="prompt-snippet">Analizeaza codul de mai jos, identifica erorile logice, propune corectii minime, explica pas cu pas rationamentul pentru elevii de clasa a 10-a.</p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>Proiect software scolar</h4>
+            <p class="prompt-snippet">Creeaza un plan de proiect pe 4 saptamani pentru o aplicatie simpla de gestionare a bibliotecii, cu roluri pe echipa, milestone-uri si rubrici de evaluare.</p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>AI + etica in informatica</h4>
+            <p class="prompt-snippet">Construieste o dezbatere de 20 minute despre utilizarea AI la teme: beneficii, riscuri, reguli de citare si exemple de utilizare responsabila.</p>
+          </article>
+        </div>
+
+        <h3 class="subheading">Instrumente recomandate in 2026</h3>
+        <div class="tool-grid">
+          <article class="tool-card reveal">
+            <strong>GPT</strong>
+            <span>lectii, explicatii, activitati, feedback</span>
+          </article>
+          <article class="tool-card reveal">
+            <strong>Claude</strong>
+            <span>analiza documente lungi, sinteze clare</span>
+          </article>
+          <article class="tool-card reveal">
+            <strong>Gemini</strong>
+            <span>integrare buna cu ecosistemul Google</span>
+          </article>
+          <article class="tool-card reveal">
+            <strong>Perplexity</strong>
+            <span>cautare cu surse si verificare rapida</span>
+          </article>
+          <article class="tool-card reveal">
+            <strong>NotebookLM</strong>
+            <span>lucru pe propriile materiale didactice</span>
+          </article>
+          <article class="tool-card reveal">
+            <strong>Kimi.ai / Grok / z.chat.ai</strong>
+            <span>brainstorming si perspective alternative</span>
+          </article>
+        </div>
+
+        <div id="etica" class="ethics-box reveal">
+          <h3>Etica, siguranta si bune practici</h3>
+          <p>
+            Verifica orice rezultat generat de AI, evita incarcarea datelor sensibile despre elevi, solicita transparenta asupra contributiei reale a elevului, foloseste AI ca asistent didactic, nu ca
+            inlocuitor al gandirii critice.
+          </p>
+        </div>
+      </section>
+
+      <section id="prompt-engineering" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Metodologie practică</p>
+          <h2>Cum scrii un prompt corect — pas cu pas</h2>
+        </div>
+        <p class="lead-text">Un prompt bun nu este o întrebare simplă — este o instrucțiune structurată. Diferența dintre un rezultat mediocru și unul excelent stă în cum formulezi cererea.</p>
+        <div class="pe-compare reveal">
+          <div class="pe-bad">
+            <p class="pe-label pe-label--bad">Prompt slab</p>
+            <p class="prompt-snippet">„Fă-mi o lecție despre recursivitate."</p>
+            <p class="pe-note">Lipsesc: nivelul clasei, durata, formatul, obiectivele, limbajul de programare.</p>
+          </div>
+          <div class="pe-good">
+            <p class="pe-label pe-label--good">Prompt bun</p>
+            <p class="prompt-snippet">
+              „Ești profesor de informatică. Creează o lecție de 45 de minute despre recursivitate pentru clasa a 11-a, profil real. Include: obiective SMART, o analogie din viața reală, 2 exemple de
+              cod în C++ cu comentarii, 3 exerciții cu dificultate progresivă și un barem scurt. Evită termenii tehnici fără explicații."
+            </p>
+            <p class="pe-note">Include: rol, obiectiv, context, format, constrângeri, nivel de limbaj.</p>
+          </div>
+        </div>
+        <h3 class="subheading">Componentele unui prompt eficient — Formula ROCC</h3>
+        <div class="mission-grid">
+          <article class="mission-card reveal">
+            <h3>R — Rol</h3>
+            <p>Spune AI-ului ce expert să fie: „Ești profesor de informatică cu 10 ani experiență la liceu…". Rolul calibrează tonul, vocabularul și profunzimea răspunsului.</p>
+          </article>
+          <article class="mission-card reveal">
+            <h3>O — Obiectiv</h3>
+            <p>Descrie exact ce vrei: „Creează…", „Explică…", „Generează 5…", „Compară…". Fii specific cu numărul de itemi, lungimea și formatul (tabel, listă, paragraf).</p>
+          </article>
+          <article class="mission-card reveal">
+            <h3>C — Context</h3>
+            <p>Oferă detalii relevante: clasa, nivelul elevilor, tema din curriculum, limbajul de programare, durata activității, resursele disponibile.</p>
+          </article>
+          <article class="mission-card reveal">
+            <h3>C — Constrângeri</h3>
+            <p>Limitează răspunsul: „Fără jargon avansat", „Maximum 300 de cuvinte", „Doar în română", „Nu folosi biblioteci externe". Constrângerile salvează timp la editare.</p>
+          </article>
+        </div>
+        <h3 class="subheading">Tehnici avansate de prompting</h3>
+        <div class="grid-two">
+          <article class="prompt-card reveal">
+            <h4>Chain-of-Thought (pas cu pas)</h4>
+            <p class="prompt-snippet">„Rezolvă această problemă pas cu pas, explicând fiecare decizie de design pentru un elev de clasa a 10-a care nu cunoaște recursivitatea."</p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>Few-shot (cu exemple)</h4>
+            <p class="prompt-snippet">„Generează întrebări de test. Exemple de stil dorit: [Exemplu 1] [Exemplu 2]. Acum creează 5 întrebări similare despre sortare."</p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>Iterare și rafinare</h4>
+            <p class="prompt-snippet">„Rezultatul anterior este prea avansat. Simplifică pentru elevi de gimnaziu, păstrează structura dar înlocuiește termenii tehnici cu analogii vizuale."</p>
+          </article>
+          <article class="prompt-card reveal">
+            <h4>Prompt de verificare</h4>
+            <p class="prompt-snippet">„Verifică materialul de mai jos pentru acuratețe factică, adecvare pedagogică și respectarea curriculumului moldovenesc de informatică clasa a 9-a."</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="instrumente" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Ghid complet 2026</p>
+          <h2>Instrumente AI — Tabel comparat</h2>
+        </div>
+        <p class="lead-text">16 instrumente esențiale pentru profesori, cu descriere și link direct. Alege în funcție de nevoile tale didactice.</p>
+        <div class="table-wrap">
+          <table class="tools-table">
+            <thead>
+              <tr>
+                <th>Instrument</th>
+                <th>Ce face / Caracteristici principale</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Claude</td>
+                <td>LLM puternică de la Anthropic. Excelentă pentru analiza documentelor lungi, generare de cod și idei creative.</td>
+                <td>
+                  <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener noreferrer"> anthropic.com/claude </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini</td>
+                <td>Model multimodal de la Google DeepMind (text, imagini, audio, video). Versiuni: Ultra, Pro, Flash, Nano.</td>
+                <td>
+                  <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer"> gemini.google.com </a>
+                </td>
+              </tr>
+              <tr>
+                <td>GPT (OpenAI)</td>
+                <td>Cea mai populară serie de modele lingvistice (GPT-3.5, GPT-4, GPT-4o). Util pentru chatboturi, cod și redactare.</td>
+                <td>
+                  <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer"> chat.openai.com </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Grok (xAI)</td>
+                <td>Asistent cu acces la internet în timp real, scriere de cod, generare de media.</td>
+                <td>
+                  <a href="https://x.ai" target="_blank" rel="noopener noreferrer"> x.ai </a>
+                </td>
+              </tr>
+              <tr>
+                <td>DeepSeek</td>
+                <td>LLM chinez open-source. Mai eficient și accesibil decât alternativele, cu calitate ridicată.</td>
+                <td>
+                  <a href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer"> deepseek.com </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Qwen (Alibaba)</td>
+                <td>Modele lingvistice open de la Alibaba Cloud. Puncte forte: raționament și generare de conținut.</td>
+                <td>
+                  <a href="https://qwen.ai" target="_blank" rel="noopener noreferrer"> qwen.ai </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Perplexity</td>
+                <td>Motor de căutare de nouă generație: caută pe internet și răspunde cu surse citate, în timp real.</td>
+                <td>
+                  <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer"> perplexity.ai </a>
+                </td>
+              </tr>
+              <tr>
+                <td>z.ai</td>
+                <td>Chat AI focusat pe asistenți prietenoși și fluxuri productive. Simplu și rapid de utilizat.</td>
+                <td>
+                  <a href="https://chat.z.ai" target="_blank" rel="noopener noreferrer"> chat.z.ai </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Nano Banana</td>
+                <td>Editor de imagini powered by Google Gemini 2.5 Flash. Menține trăsăturile persoanelor, schimbă fundalul și îmbrăcămintea.</td>
+                <td>
+                  <a href="https://nanobanana.app" target="_blank" rel="noopener noreferrer"> nanobanana.app </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Krea</td>
+                <td>Instrument pentru generare de imagini și animații cu prompturi text în timp real.</td>
+                <td>
+                  <a href="https://www.krea.ai" target="_blank" rel="noopener noreferrer"> krea.ai </a>
+                </td>
+              </tr>
+              <tr>
+                <td>HeyGen</td>
+                <td>Platformă video cu avatare, voci sintetice și traducere automată. Ideal pentru lecții și prezentări.</td>
+                <td>
+                  <a href="https://www.heygen.com" target="_blank" rel="noopener noreferrer"> heygen.com </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Gamma AI</td>
+                <td>Creează prezentări, pagini web și documente din text. Design profesional generat automat.</td>
+                <td>
+                  <a href="https://gamma.app" target="_blank" rel="noopener noreferrer"> gamma.app </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Kimi (Moonshot AI)</td>
+                <td>Chatbot puternic de la Moonshot AI. Suport pentru contexte uriașe, răspunsuri rapide.</td>
+                <td>
+                  <a href="https://kimi.com" target="_blank" rel="noopener noreferrer"> kimi.com </a>
+                </td>
+              </tr>
+              <tr>
+                <td>NotebookLM (Google)</td>
+                <td>Asistent AI pentru studiu: generează rezumate, fișe și teste din documentele tale proprii.</td>
+                <td>
+                  <a href="https://notebooklm.google" target="_blank" rel="noopener noreferrer"> notebooklm.google </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Replit</td>
+                <td>IDE online cu asistent AI integrat pentru programare. Suport pentru zeci de limbaje, direct din browser.</td>
+                <td>
+                  <a href="https://replit.com" target="_blank" rel="noopener noreferrer"> replit.com </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Lovable</td>
+                <td>Platformă pentru crearea aplicațiilor „după descriere": generează automat frontend, backend și baza de date.</td>
+                <td>
+                  <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer"> lovable.dev </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="nanobanana" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Generare imagini cu AI</p>
+          <h2>Cum creezi imagini cu Nano Banana (Gemini)</h2>
+        </div>
+        <p class="lead-text">
+          Nano Banana este un editor de imagini powered by Google Gemini 2.5 Flash. Poți schimba fundalul, îmbrăcămintea sau contextul unei fotografii, păstrând trăsăturile feței și identitatea
+          persoanei. Perfect pentru material didactic, prezentări și postere profesionale.
+        </p>
+        <ol class="steps-list">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <strong>Accesează nanobanana.app</strong>
+              <p>
+                Deschide
+                <a href="https://nanobanana.app" target="_blank" rel="noopener noreferrer"> nanobanana.app </a>
+                în browser. Nu necesită instalare sau cont obligatoriu.
+              </p>
             </div>
-
-            <div class="hero__actions">
-                <a
-                    class="btn btn--primary"
-                    href="#agenda">
-                    Vezi agenda
-                </a>
-                <a
-                    class="btn"
-                    href="#materiale">
-                    Resurse workshop
-                </a>
-                <a
-                    class="btn"
-                    href="https://forms.gle/6PnaqNmi5gHyntNW9"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Feedback Google Forms
-                </a>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Încarcă imaginea</strong>
+              <p>Apasă „Upload" și selectează o fotografie de pe dispozitivul tău (format JPG sau PNG).</p>
             </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <strong>Descrie modificarea dorită</strong>
+              <p>Scrie ce vrei să schimbi: „Pune un fundal de clasă modernă", „Adaugă o jachetă albastră", „Transformă în ilustrație vectorială". Gemini înțelege instrucțiunile în română.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <div>
+              <strong>AI menține identitatea persoanei</strong>
+              <p>Gemini 2.5 Flash păstrează trăsăturile feței, expresia și proporțiile corpului. Modifică doar elementele descrise în prompt.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">5</span>
+            <div>
+              <strong>Descarcă și iterează</strong>
+              <p>Apasă „Download" pentru a salva imaginea. Poți continua cu prompturi noi pentru a rafina rezultatul.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="info-box reveal">
+          <strong>Idei pentru profesori:</strong>
+          <p>Creează fotografii profesionale pentru profiluri. Generează ilustrații pentru fișe de lucru, postere tematice sau avatare pentru prezentări și site-uri școlare.</p>
+        </div>
+      </section>
 
-            <nav
-                class="hero__nav"
-                aria-label="Navigare sectiuni">
-                <a href="#agenda">Agenda</a>
-                <a href="#speaker">Speaker</a>
-                <a href="#beneficii">Beneficii</a>
-                <a href="#materiale">Resurse</a>
-                <a href="#prompturi">Prompturi</a>
-            </nav>
-        </header>
-
-        <main class="container">
-            <section
-                id="agenda"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Programul evenimentului</p>
-                    <h2>Agenda 10:30 - 12:00</h2>
+      <section id="notebooklm" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Creare materiale didactice cu AI</p>
+          <h2>NotebookLM + Gemini: materiale din propriile documente</h2>
+        </div>
+        <p class="lead-text">
+          NotebookLM de la Google transformă documentele tale în materiale didactice interactive — rezumate, fișe de studiu, teste și podcast-uri audio generate automat din PDF-uri, Google Docs sau
+          pagini web.
+        </p>
+        <div class="grid-two">
+          <div>
+            <h3 class="subheading">Cum folosești NotebookLM</h3>
+            <ol class="steps-list full-height">
+              <li>
+                <span class="step-num">1</span>
+                <div>
+                  <strong>Accesează notebooklm.google</strong>
+                  <p>Contul Google este suficient. Creează un Notebook nou pentru fiecare subiect sau clasă.</p>
                 </div>
-                <div class="agenda">
-                    <article class="agenda__item reveal">
-                        <span class="agenda__time">10:30</span>
-                        <div>
-                            <h3>Deschidere si context 2026</h3>
-                            <p>
-                                Rolul AI in educatie, asteptari realiste si obiectivele atelierului.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="agenda__item reveal">
-                        <span class="agenda__time">10:45</span>
-                        <div>
-                            <h3>AI News pentru profesori de informatica</h3>
-                            <p>
-                                Ce este nou in 2026: asistenti multimodali, fluxuri rapide si lucru
-                                bazat pe surse.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="agenda__item reveal">
-                        <span class="agenda__time">11:00</span>
-                        <div>
-                            <h3>Prompt engineering aplicat</h3>
-                            <p>
-                                Formule eficiente pentru lectii de algoritmica, Python, C/C++ si
-                                proiecte software.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="agenda__item reveal">
-                        <span class="agenda__time">11:20</span>
-                        <div>
-                            <h3>Instrumente + demonstratie de lectie interactiva</h3>
-                            <p>
-                                GPT, Claude, Gemini, Perplexity, NotebookLM si scenarii concrete de
-                                predare.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="agenda__item reveal">
-                        <span class="agenda__time">11:45</span>
-                        <div>
-                            <h3>Etica, siguranta, concluzii</h3>
-                            <p>
-                                Integritate academica, protectia datelor elevilor si bune practici
-                                pentru utilizare responsabila.
-                            </p>
-                        </div>
-                    </article>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>
+                  <strong>Adaugă surse</strong>
+                  <p>Importă PDF-uri, Google Docs, link-uri web sau videoclipuri YouTube. NotebookLM lucrează exclusiv cu sursele tale — nu inventează informații.</p>
                 </div>
-            </section>
-
-            <section
-                id="speaker"
-                class="speaker reveal">
-                <div class="speaker__photo-wrap">
-                    <img
-                        class="speaker__photo"
-                        src="anastasia_workshop.jpg"
-                        alt="Maidacenco Anastasia" />
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>
+                  <strong>Generează materiale</strong>
+                  <p>Cere rezumate, fișe de termeni cheie, liste de întrebări, planuri de lecție sau explicații ale conceptelor dificile.</p>
                 </div>
-                <div class="speaker__content">
-                    <p class="section-head__kicker">Speaker / Bio</p>
-                    <h2>Maidacenco Anastasia</h2>
-                    <p class="speaker__role">IT Specialist</p>
-                    <p>
-                        Specialist in C/C++, Python pentru Data Science, AI si dezvoltarea
-                        sistemelor complexe. Experiența in proiecte educaționale, traininguri pentru
-                        profesori si integrarea AI in curriculum. Pasionată de transformarea
-                        digitala a educatiei si promovarea utilizarii responsabile a tehnologiei in
-                        școli.
-                    </p>
-                    <div class="tag-list">
-                        <span>C/C++</span>
-                        <span>Python</span>
-                        <span>Data Science</span>
-                        <span>AI in educatie</span>
-                        <span>Prompt engineering</span>
-                        <span>Etica digitala</span>
-                    </div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div>
+                  <strong>Creează Audio Overview (Podcast)</strong>
+                  <p>Cu un click, NotebookLM generează un podcast de tip dezbatere între doi vorbitori sintetici care discută materialul tău. Util pentru recapitulare acasă.</p>
                 </div>
-            </section>
-
-            <section
-                id="misiune"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Rolul profesorului în era AI</p>
-                    <h2>Misiunea Profesorului</h2>
-                </div>
-                <p class="lead-text">
-                    În era inteligenței artificiale, misiunea profesorului nu dispare — ea se
-                    transformă profund. Nu mai ești doar furnizor de informație, ci ghid al gândirii
-                    critice, mentor al utilizării responsabile a tehnologiei și facilitator al
-                    învățării profunde. AI poate genera conținut, dar nu poate forma caracterul sau
-                    cultiva curiozitatea.
-                </p>
-                <div class="mission-grid">
-                    <article class="mission-card reveal">
-                        <h3>Designer de experiențe</h3>
-                        <p>
-                            Proiectezi lecții care nu pot fi înlocuite de un chatbot: dezbateri,
-                            experimente, colaborare reală, reflecție. AI devine un instrument în
-                            mâna profesorului, nu un rival.
-                        </p>
-                    </article>
-                    <article class="mission-card reveal">
-                        <h3>Model de gândire critică</h3>
-                        <p>
-                            Elevii au nevoie să vadă cum gândești, nu doar ce știi. Cum verifici o
-                            sursă, cum formulezi o întrebare bună, cum recunoști o eroare — acestea
-                            rămân apanajul profesorului.
-                        </p>
-                    </article>
-                    <article class="mission-card reveal">
-                        <h3>Gardian al valorilor etice</h3>
-                        <p>
-                            Integritate academică, empatie, responsabilitate digitală — valori pe
-                            care nicio rețea neuronală nu le poate preda. Profesorul rămâne busola
-                            morală a clasei.
-                        </p>
-                    </article>
-                    <article class="mission-card reveal">
-                        <h3>Conector al lumii reale</h3>
-                        <p>
-                            Leagă cunoașterea abstractă de contextele concrete din viața elevilor.
-                            Relevanța și motivația personală nu pot fi automatizate.
-                        </p>
-                    </article>
-                </div>
-                <h3 class="subheading">Motivație și Disciplină în Era Distragerilor Digitale</h3>
-                <p class="lead-text">
-                    Smartphone-urile, videoclipurile scurte și notificările continue au recablat
-                    creierul elevilor pentru gratificare imediată. Iată strategii dovedite pentru a
-                    menține atenția și motivația:
-                </p>
-                <div class="discover-grid">
-                    <article class="discover-card reveal">
-                        <h3>Micro-obiective clare</h3>
-                        <p>
-                            Sparge activitățile mari în sarcini de 5–10 minute cu rezultate
-                            vizibile. Creierul elevilor are nevoie de feedback rapid — AI poate
-                            genera exerciții scurte și personalizate pe loc.
-                        </p>
-                    </article>
-                    <article class="discover-card reveal">
-                        <h3>Relevanță imediată</h3>
-                        <p>
-                            Conectează fiecare lecție la un „de ce contează azi". Elevii motivați
-                            intern înlocuiesc disciplina externă cu autodisciplina. AI ajută la
-                            generarea de exemple actuale și contexte reale.
-                        </p>
-                    </article>
-                    <article class="discover-card reveal">
-                        <h3>Autonomie ghidată</h3>
-                        <p>
-                            Oferă alegere în cadrul structurii: ce problemă să rezolve, ce
-                            instrument să folosească, cum să prezinte soluția. Autonomia crește
-                            motivația intrinsecă și face elevul proprietarul procesului.
-                        </p>
-                    </article>
-                    <article class="discover-card reveal">
-                        <h3>Reguli clare pentru AI în clasă</h3>
-                        <p>
-                            Stabilește împreună cu elevii când este permis AI, când nu și cum se
-                            citează contribuția lui. Claritatea regulilor reduce anxietatea și
-                            comportamentul evitant.
-                        </p>
-                    </article>
-                </div>
-            </section>
-
-            <section
-                id="beneficii"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Rezultate workshop</p>
-                    <h2>Ce vei putea aplica imediat la clasa</h2>
-                </div>
-                <div class="metric-grid">
-                    <article class="metric-card reveal">
-                        <strong>70%</strong>
-                        <p>
-                            reducere potentiala a timpului pentru sarcini repetitive de pregatire si
-                            evaluare
-                        </p>
-                    </article>
-                    <article class="metric-card reveal">
-                        <strong>10+</strong>
-                        <p>
-                            prompturi reutilizabile pentru algoritmi, debugging, proiecte si
-                            evaluari
-                        </p>
-                    </article>
-                    <article class="metric-card reveal">
-                        <strong>90 min</strong>
-                        <p>
-                            continut concentrat pentru profesori de informatica, fara teorie inutila
-                        </p>
-                    </article>
-                </div>
-                <div class="discover-grid">
-                    <article class="discover-card reveal">
-                        <h3>Predare asistata de AI</h3>
-                        <p>
-                            Creezi explicatii mai clare pentru concepte dificile: recursivitate,
-                            complexitate, structuri de date.
-                        </p>
-                    </article>
-                    <article class="discover-card reveal">
-                        <h3>Evaluare mai rapida</h3>
-                        <p>
-                            Generezi rubrici, mini-teste si feedback diferentiat pentru elevi cu
-                            niveluri diferite.
-                        </p>
-                    </article>
-                    <article class="discover-card reveal">
-                        <h3>Lectii interactive</h3>
-                        <p>
-                            Transformi ora de informatica in activitati de tip laborator, simulare
-                            si rezolvare colaborativa.
-                        </p>
-                    </article>
-                    <article class="discover-card reveal">
-                        <h3>Etica si siguranta</h3>
-                        <p>
-                            Aplici reguli clare pentru utilizarea responsabila a AI, citare,
-                            verificare si protectia datelor.
-                        </p>
-                    </article>
-                </div>
-            </section>
-
-            <section
-                id="materiale"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Resurse</p>
-                    <h2>Materiale pentru lucru imediat</h2>
-                </div>
-                <div class="resource-grid">
-                    <a
-                        class="resource"
-                        href="AI_for_Teachers.pdf"
-                        target="_blank">
-                        <strong>Prezentare workshop (PDF)</strong>
-                        <span>AI_for_Teachers.pdf</span>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="subheading">Plugin: NotebookLM Quiz Exporter</h3>
+            <div class="info-box">
+              <strong>Export teste cu un singur click</strong>
+              <p>
+                Extensia Chrome
+                <strong>
+                  <a href="https://nlmexporter.keeman.app/" target="_blank" rel="noopener noreferrer"> NotebookLM Quiz Exporter </a>
+                </strong>
+                extrage testele generate de NotebookLM și le exportă în format compatibil cu Quizlet sau Wayground.
+              </p>
+            </div>
+            <ol class="steps-list full-height">
+              <li>
+                <span class="step-num">1</span>
+                <div>
+                  <strong>Instalează extensia</strong>
+                  <p>
+                    Caută „NotebookLM Quiz Exporter" în Chrome Web Store și adaugă extensia în browser. Încă o extensie bună este
+                    <a href="https://chromewebstore.google.com/detail/notebooklm-ultra-exporter/afchokljnhhggkhedfbmkcmdagjmjchj" target="_blank" rel="noopener noreferrer">
+                      NotebookLM Ultra Exporter
                     </a>
-                    <a
-                        class="resource"
-                        href="anastasia_workshop.jpg">
-                        <strong>Imagine speaker</strong>
-                        <span>anastasia_workshop.jpg</span>
-                    </a>
+                    <span>, care exportă date in mai multe formate.</span>
+                  </p>
                 </div>
-                <div class="feedback-box">
-                    <p>Ajuta-ne sa imbunatatim urmatoarele editii ale atelierului.</p>
-                    <a
-                        class="btn btn--primary"
-                        href="https://forms.gle/6PnaqNmi5gHyntNW9"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Trimite feedback in Google Forms
-                    </a>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>
+                  <strong>Generează un test în NotebookLM</strong>
+                  <p>Cere: „Creează un test cu 10 întrebări cu variante de răspuns despre [subiect]".</p>
                 </div>
-            </section>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>
+                  <strong>Exportă și importă</strong>
+                  <p>Apasă iconița extensiei → Export → Alege Quizlet sau Wayground. Testul apare gata de utilizat în platforma aleasă.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
-            <section
-                id="prompturi"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Prompt engineering</p>
-                    <h2>Prompturi profesionale pentru profesori de informatica</h2>
-                </div>
+      <section id="etica-avansata" class="panel reveal">
+        <div class="section-head">
+          <p class="section-head__kicker">Responsabilitate digitală</p>
+          <h2>Provocări Etice în AI și Educație</h2>
+        </div>
+        <p class="lead-text">
+          Utilizarea AI în educație ridică întrebări etice complexe pe care profesorul modern trebuie să le cunoască, să le discute cu elevii și să le abordeze proactiv în clasă.
+        </p>
+        <div class="challenge-grid">
+          <article class="challenge-card reveal">
+            <h3>Integritate academică și fraudă</h3>
+            <p>
+              AI poate scrie teme, eseuri sau rezolva probleme de programare. Cum distingem munca elevului de output-ul AI? Soluție: proiecte orale, procese documentate, reflecții personale și
+              evaluări în clasă.
+            </p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Confidențialitatea datelor elevilor</h3>
+            <p>
+              Nu introduce date personale ale elevilor (nume, vârstă, rezultate) în chatbot-uri publice. Datele trimise la servere externe pot fi stocate și utilizate pentru antrenare. Folosește date
+              anonimizate.
+            </p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Bias și discriminare algoritmică</h3>
+            <p>
+              Modelele AI sunt antrenate pe date istorice care conțin prejudecăți. Ele pot reproduce stereotipuri de gen, rasă sau cultură. Verifică critic orice material generat înainte de a-l folosi
+              în clasă.
+            </p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Dependența cognitivă</h3>
+            <p>Utilizarea excesivă a AI poate reduce capacitatea elevilor de a gândi independent și de a rezolva probleme fără asistență digitală. Impune zone „AI-free" în curriculum.</p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Drept de autor și proprietate intelectuală</h3>
+            <p>
+              Conținutul generat de AI poate reproduce fragmente din opere protejate. Imaginile AI pot semăna cu stilul unor artiști vii. Educă elevii despre citare, atribuire și drepturile digitale.
+            </p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Transparență și responsabilitate</h3>
+            <p>Elevii și părinții au dreptul să știe când AI este folosit în procesul educațional. Declară utilizarea AI în materiale, evaluări și feedback. Transparența construiește încredere.</p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Acces echitabil (Digital Divide)</h3>
+            <p>Nu toți elevii au acces la internet rapid, dispozitive performante sau conturi premium AI. Proiectează activități care pot funcționa și fără AI sau cu versiuni gratuite.</p>
+          </article>
+          <article class="challenge-card reveal">
+            <h3>Dezinformare și halucinații AI</h3>
+            <p>
+              Modelele AI produc uneori informații false cu o încredere aparentă. Antrenează elevii să verifice orice afirmație AI folosind surse primare și să nu accepte răspunsuri fără gândire
+              critică.
+            </p>
+          </article>
+        </div>
+        <div class="ethics-box reveal">
+          <h3>Regula de aur pentru profesori</h3>
+          <p>Folosește AI ca pe un asistent inteligent, nu ca pe un oracol infailibil. Verifică, adaptează, personalizează. Responsabilitatea pedagogică rămâne a ta.</p>
+        </div>
+      </section>
+    </main>
 
-                <div class="grid-two">
-                    <article class="prompt-card reveal">
-                        <h3>Formula standard</h3>
-                        <ul class="list-clean">
-                            <li>Rol: ce expert trebuie sa fie modelul</li>
-                            <li>Obiectiv: ce rezultat exact doresti</li>
-                            <li>Context: clasa, nivel, durata, curriculum</li>
-                            <li>Constrangeri: format, limba, numar de itemi</li>
-                            <li>Validare: criterii de calitate si verificare</li>
-                        </ul>
-                    </article>
-
-                    <article class="prompt-card reveal">
-                        <h3>Model scurt reutilizabil</h3>
-                        <p class="prompt-snippet">
-                            Esti profesor de informatica. Creeaza o lectie de 45 de minute pentru
-                            clasa a 9-a despre structuri repetitive in Python. Include obiective,
-                            exemplu explicat pas cu pas, 3 exercitii graduale si barem scurt.
-                        </p>
-                    </article>
-                </div>
-
-                <h3 class="subheading">Exemple pe discipline informatice</h3>
-                <div class="grid-two">
-                    <article class="prompt-card reveal">
-                        <h4>Algoritmica (gimnaziu)</h4>
-                        <p class="prompt-snippet">
-                            Esti mentor de algoritmica. Explica elevilor de clasa a 7-a notiunea de
-                            algoritm folosind 2 analogii simple, apoi propune 5 probleme usoare cu
-                            rezolvari orientative.
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>Python (liceu)</h4>
-                        <p class="prompt-snippet">
-                            Creeaza o activitate de laborator de 30 minute despre liste si
-                            dictionare in Python, cu date de intrare, output asteptat, 3 niveluri de
-                            dificultate si criterii de evaluare.
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>C/C++ (liceu)</h4>
-                        <p class="prompt-snippet">
-                            Genereaza 4 exercitii progresive despre vectori in C++, fiecare cu
-                            explicatie a complexitatii, capcane frecvente si varianta optimizata.
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>Debugging si code review</h4>
-                        <p class="prompt-snippet">
-                            Analizeaza codul de mai jos, identifica erorile logice, propune corectii
-                            minime, explica pas cu pas rationamentul pentru elevii de clasa a 10-a.
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>Proiect software scolar</h4>
-                        <p class="prompt-snippet">
-                            Creeaza un plan de proiect pe 4 saptamani pentru o aplicatie simpla de
-                            gestionare a bibliotecii, cu roluri pe echipa, milestone-uri si rubrici
-                            de evaluare.
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>AI + etica in informatica</h4>
-                        <p class="prompt-snippet">
-                            Construieste o dezbatere de 20 minute despre utilizarea AI la teme:
-                            beneficii, riscuri, reguli de citare si exemple de utilizare
-                            responsabila.
-                        </p>
-                    </article>
-                </div>
-
-                <h3 class="subheading">Instrumente recomandate in 2026</h3>
-                <div class="tool-grid">
-                    <article class="tool-card reveal">
-                        <strong>GPT</strong>
-                        <span>lectii, explicatii, activitati, feedback</span>
-                    </article>
-                    <article class="tool-card reveal">
-                        <strong>Claude</strong>
-                        <span>analiza documente lungi, sinteze clare</span>
-                    </article>
-                    <article class="tool-card reveal">
-                        <strong>Gemini</strong>
-                        <span>integrare buna cu ecosistemul Google</span>
-                    </article>
-                    <article class="tool-card reveal">
-                        <strong>Perplexity</strong>
-                        <span>cautare cu surse si verificare rapida</span>
-                    </article>
-                    <article class="tool-card reveal">
-                        <strong>NotebookLM</strong>
-                        <span>lucru pe propriile materiale didactice</span>
-                    </article>
-                    <article class="tool-card reveal">
-                        <strong>Kimi.ai / Grok / z.chat.ai</strong>
-                        <span>brainstorming si perspective alternative</span>
-                    </article>
-                </div>
-
-                <div
-                    id="etica"
-                    class="ethics-box reveal">
-                    <h3>Etica, siguranta si bune practici</h3>
-                    <p>
-                        Verifica orice rezultat generat de AI, evita incarcarea datelor sensibile
-                        despre elevi, solicita transparenta asupra contributiei reale a elevului,
-                        foloseste AI ca asistent didactic, nu ca inlocuitor al gandirii critice.
-                    </p>
-                </div>
-            </section>
-
-            <section
-                id="prompt-engineering"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Metodologie practică</p>
-                    <h2>Cum scrii un prompt corect — pas cu pas</h2>
-                </div>
-                <p class="lead-text">
-                    Un prompt bun nu este o întrebare simplă — este o instrucțiune structurată.
-                    Diferența dintre un rezultat mediocru și unul excelent stă în cum formulezi
-                    cererea.
-                </p>
-                <div class="pe-compare reveal">
-                    <div class="pe-bad">
-                        <p class="pe-label pe-label--bad">Prompt slab</p>
-                        <p class="prompt-snippet">„Fă-mi o lecție despre recursivitate."</p>
-                        <p class="pe-note">
-                            Lipsesc: nivelul clasei, durata, formatul, obiectivele, limbajul de
-                            programare.
-                        </p>
-                    </div>
-                    <div class="pe-good">
-                        <p class="pe-label pe-label--good">Prompt bun</p>
-                        <p class="prompt-snippet">
-                            „Ești profesor de informatică. Creează o lecție de 45 de minute despre
-                            recursivitate pentru clasa a 11-a, profil real. Include: obiective
-                            SMART, o analogie din viața reală, 2 exemple de cod în C++ cu
-                            comentarii, 3 exerciții cu dificultate progresivă și un barem scurt.
-                            Evită termenii tehnici fără explicații."
-                        </p>
-                        <p class="pe-note">
-                            Include: rol, obiectiv, context, format, constrângeri, nivel de limbaj.
-                        </p>
-                    </div>
-                </div>
-                <h3 class="subheading">Componentele unui prompt eficient — Formula ROCC</h3>
-                <div class="mission-grid">
-                    <article class="mission-card reveal">
-                        <h3>R — Rol</h3>
-                        <p>
-                            Spune AI-ului ce expert să fie: „Ești profesor de informatică cu 10 ani
-                            experiență la liceu…". Rolul calibrează tonul, vocabularul și
-                            profunzimea răspunsului.
-                        </p>
-                    </article>
-                    <article class="mission-card reveal">
-                        <h3>O — Obiectiv</h3>
-                        <p>
-                            Descrie exact ce vrei: „Creează…", „Explică…", „Generează 5…",
-                            „Compară…". Fii specific cu numărul de itemi, lungimea și formatul
-                            (tabel, listă, paragraf).
-                        </p>
-                    </article>
-                    <article class="mission-card reveal">
-                        <h3>C — Context</h3>
-                        <p>
-                            Oferă detalii relevante: clasa, nivelul elevilor, tema din curriculum,
-                            limbajul de programare, durata activității, resursele disponibile.
-                        </p>
-                    </article>
-                    <article class="mission-card reveal">
-                        <h3>C — Constrângeri</h3>
-                        <p>
-                            Limitează răspunsul: „Fără jargon avansat", „Maximum 300 de cuvinte",
-                            „Doar în română", „Nu folosi biblioteci externe". Constrângerile
-                            salvează timp la editare.
-                        </p>
-                    </article>
-                </div>
-                <h3 class="subheading">Tehnici avansate de prompting</h3>
-                <div class="grid-two">
-                    <article class="prompt-card reveal">
-                        <h4>Chain-of-Thought (pas cu pas)</h4>
-                        <p class="prompt-snippet">
-                            „Rezolvă această problemă pas cu pas, explicând fiecare decizie de
-                            design pentru un elev de clasa a 10-a care nu cunoaște recursivitatea."
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>Few-shot (cu exemple)</h4>
-                        <p class="prompt-snippet">
-                            „Generează întrebări de test. Exemple de stil dorit: [Exemplu 1]
-                            [Exemplu 2]. Acum creează 5 întrebări similare despre sortare."
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>Iterare și rafinare</h4>
-                        <p class="prompt-snippet">
-                            „Rezultatul anterior este prea avansat. Simplifică pentru elevi de
-                            gimnaziu, păstrează structura dar înlocuiește termenii tehnici cu
-                            analogii vizuale."
-                        </p>
-                    </article>
-                    <article class="prompt-card reveal">
-                        <h4>Prompt de verificare</h4>
-                        <p class="prompt-snippet">
-                            „Verifică materialul de mai jos pentru acuratețe factică, adecvare
-                            pedagogică și respectarea curriculumului moldovenesc de informatică
-                            clasa a 9-a."
-                        </p>
-                    </article>
-                </div>
-            </section>
-
-            <section
-                id="instrumente"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Ghid complet 2026</p>
-                    <h2>Instrumente AI — Tabel comparat</h2>
-                </div>
-                <p class="lead-text">
-                    16 instrumente esențiale pentru profesori, cu descriere și link direct. Alege în
-                    funcție de nevoile tale didactice.
-                </p>
-                <div class="table-wrap">
-                    <table class="tools-table">
-                        <thead>
-                            <tr>
-                                <th>Instrument</th>
-                                <th>Ce face / Caracteristici principale</th>
-                                <th>Link</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Claude</td>
-                                <td>
-                                    LLM puternică de la Anthropic. Excelentă pentru analiza
-                                    documentelor lungi, generare de cod și idei creative.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://www.anthropic.com/claude"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        anthropic.com/claude
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Gemini</td>
-                                <td>
-                                    Model multimodal de la Google DeepMind (text, imagini, audio,
-                                    video). Versiuni: Ultra, Pro, Flash, Nano.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://gemini.google.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        gemini.google.com
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>GPT (OpenAI)</td>
-                                <td>
-                                    Cea mai populară serie de modele lingvistice (GPT-3.5, GPT-4,
-                                    GPT-4o). Util pentru chatboturi, cod și redactare.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://chat.openai.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        chat.openai.com
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Grok (xAI)</td>
-                                <td>
-                                    Asistent cu acces la internet în timp real, scriere de cod,
-                                    generare de media.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://x.ai"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        x.ai
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DeepSeek</td>
-                                <td>
-                                    LLM chinez open-source. Mai eficient și accesibil decât
-                                    alternativele, cu calitate ridicată.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://www.deepseek.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        deepseek.com
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Qwen (Alibaba)</td>
-                                <td>
-                                    Modele lingvistice open de la Alibaba Cloud. Puncte forte:
-                                    raționament și generare de conținut.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://qwen.ai"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        qwen.ai
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Perplexity</td>
-                                <td>
-                                    Motor de căutare de nouă generație: caută pe internet și
-                                    răspunde cu surse citate, în timp real.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://www.perplexity.ai"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        perplexity.ai
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>z.ai</td>
-                                <td>
-                                    Chat AI focusat pe asistenți prietenoși și fluxuri productive.
-                                    Simplu și rapid de utilizat.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://chat.z.ai"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        chat.z.ai
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nano Banana</td>
-                                <td>
-                                    Editor de imagini powered by Google Gemini 2.5 Flash. Menține
-                                    trăsăturile persoanelor, schimbă fundalul și îmbrăcămintea.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://nanobanana.app"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        nanobanana.app
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Krea</td>
-                                <td>
-                                    Instrument pentru generare de imagini și animații cu prompturi
-                                    text în timp real.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://www.krea.ai"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        krea.ai
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>HeyGen</td>
-                                <td>
-                                    Platformă video cu avatare, voci sintetice și traducere
-                                    automată. Ideal pentru lecții și prezentări.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://www.heygen.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        heygen.com
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Gamma AI</td>
-                                <td>
-                                    Creează prezentări, pagini web și documente din text. Design
-                                    profesional generat automat.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://gamma.app"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        gamma.app
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Kimi (Moonshot AI)</td>
-                                <td>
-                                    Chatbot puternic de la Moonshot AI. Suport pentru contexte
-                                    uriașe, răspunsuri rapide.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://kimi.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        kimi.com
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>NotebookLM (Google)</td>
-                                <td>
-                                    Asistent AI pentru studiu: generează rezumate, fișe și teste din
-                                    documentele tale proprii.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://notebooklm.google"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        notebooklm.google
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Replit</td>
-                                <td>
-                                    IDE online cu asistent AI integrat pentru programare. Suport
-                                    pentru zeci de limbaje, direct din browser.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://replit.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        replit.com
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Lovable</td>
-                                <td>
-                                    Platformă pentru crearea aplicațiilor „după descriere":
-                                    generează automat frontend, backend și baza de date.
-                                </td>
-                                <td>
-                                    <a
-                                        href="https://lovable.dev"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        lovable.dev
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section
-                id="nanobanana"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Generare imagini cu AI</p>
-                    <h2>Cum creezi imagini cu Nano Banana (Gemini)</h2>
-                </div>
-                <p class="lead-text">
-                    Nano Banana este un editor de imagini powered by Google Gemini 2.5 Flash. Poți
-                    schimba fundalul, îmbrăcămintea sau contextul unei fotografii, păstrând
-                    trăsăturile feței și identitatea persoanei. Perfect pentru material didactic,
-                    prezentări și postere profesionale.
-                </p>
-                <ol class="steps-list">
-                    <li>
-                        <span class="step-num">1</span>
-                        <div>
-                            <strong>Accesează nanobanana.app</strong>
-                            <p>
-                                Deschide
-                                <a
-                                    href="https://nanobanana.app"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    nanobanana.app
-                                </a>
-                                în browser. Nu necesită instalare sau cont obligatoriu.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="step-num">2</span>
-                        <div>
-                            <strong>Încarcă imaginea</strong>
-                            <p>
-                                Apasă „Upload" și selectează o fotografie de pe dispozitivul tău
-                                (format JPG sau PNG).
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="step-num">3</span>
-                        <div>
-                            <strong>Descrie modificarea dorită</strong>
-                            <p>
-                                Scrie ce vrei să schimbi: „Pune un fundal de clasă modernă", „Adaugă
-                                o jachetă albastră", „Transformă în ilustrație vectorială". Gemini
-                                înțelege instrucțiunile în română.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="step-num">4</span>
-                        <div>
-                            <strong>AI menține identitatea persoanei</strong>
-                            <p>
-                                Gemini 2.5 Flash păstrează trăsăturile feței, expresia și
-                                proporțiile corpului. Modifică doar elementele descrise în prompt.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="step-num">5</span>
-                        <div>
-                            <strong>Descarcă și iterează</strong>
-                            <p>
-                                Apasă „Download" pentru a salva imaginea. Poți continua cu prompturi
-                                noi pentru a rafina rezultatul.
-                            </p>
-                        </div>
-                    </li>
-                </ol>
-                <div class="info-box reveal">
-                    <strong>Idei pentru profesori:</strong>
-                    <p>
-                        Creează fotografii profesionale pentru profiluri. Generează ilustrații
-                        pentru fișe de lucru, postere tematice sau avatare pentru prezentări și
-                        site-uri școlare.
-                    </p>
-                </div>
-            </section>
-
-            <section
-                id="notebooklm"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Creare materiale didactice cu AI</p>
-                    <h2>NotebookLM + Gemini: materiale din propriile documente</h2>
-                </div>
-                <p class="lead-text">
-                    NotebookLM de la Google transformă documentele tale în materiale didactice
-                    interactive — rezumate, fișe de studiu, teste și podcast-uri audio generate
-                    automat din PDF-uri, Google Docs sau pagini web.
-                </p>
-                <div class="grid-two">
-                    <div class="full-height">
-                        <h3 class="subheading">Cum folosești NotebookLM</h3>
-                        <ol class="steps-list">
-                            <li>
-                                <span class="step-num">1</span>
-                                <div>
-                                    <strong>Accesează notebooklm.google</strong>
-                                    <p>
-                                        Contul Google este suficient. Creează un Notebook nou pentru
-                                        fiecare subiect sau clasă.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-num">2</span>
-                                <div>
-                                    <strong>Adaugă surse</strong>
-                                    <p>
-                                        Importă PDF-uri, Google Docs, link-uri web sau videoclipuri
-                                        YouTube. NotebookLM lucrează exclusiv cu sursele tale — nu
-                                        inventează informații.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-num">3</span>
-                                <div>
-                                    <strong>Generează materiale</strong>
-                                    <p>
-                                        Cere rezumate, fișe de termeni cheie, liste de întrebări,
-                                        planuri de lecție sau explicații ale conceptelor dificile.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-num">4</span>
-                                <div>
-                                    <strong>Creează Audio Overview (Podcast)</strong>
-                                    <p>
-                                        Cu un click, NotebookLM generează un podcast de tip
-                                        dezbatere între doi vorbitori sintetici care discută
-                                        materialul tău. Util pentru recapitulare acasă.
-                                    </p>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="full-height">
-                        <h3 class="subheading">Plugin: NotebookLM Quiz Exporter</h3>
-                        <div class="info-box">
-                            <strong>Export teste cu un singur click</strong>
-                            <p>
-                                Extensia Chrome
-                                <strong>
-                                    <a
-                                        href="https://nlmexporter.keeman.app/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        NotebookLM Quiz Exporter
-                                    </a>
-                                </strong>
-                                extrage testele generate de NotebookLM și le exportă în format
-                                compatibil cu Quizlet sau Wayground.
-                            </p>
-                        </div>
-                        <ol class="steps-list">
-                            <li>
-                                <span class="step-num">1</span>
-                                <div>
-                                    <strong>Instalează extensia</strong>
-                                    <p>
-                                        Caută „NotebookLM Quiz Exporter" în Chrome Web Store și
-                                        adaugă extensia în browser. Încă o extensie bună este
-                                        <a
-                                            href="https://chromewebstore.google.com/detail/notebooklm-ultra-exporter/afchokljnhhggkhedfbmkcmdagjmjchj"
-                                            target="_blank"
-                                            rel="noopener noreferrer">
-                                            NotebookLM Ultra Exporter
-                                        </a>
-                                        <span>, care exportă date in mai multe formate.</span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-num">2</span>
-                                <div>
-                                    <strong>Generează un test în NotebookLM</strong>
-                                    <p>
-                                        Cere: „Creează un test cu 10 întrebări cu variante de
-                                        răspuns despre [subiect]".
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-num">3</span>
-                                <div>
-                                    <strong>Exportă și importă</strong>
-                                    <p>
-                                        Apasă iconița extensiei → Export → Alege Quizlet sau
-                                        Wayground. Testul apare gata de utilizat în platforma
-                                        aleasă.
-                                    </p>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                id="etica-avansata"
-                class="panel reveal">
-                <div class="section-head">
-                    <p class="section-head__kicker">Responsabilitate digitală</p>
-                    <h2>Provocări Etice în AI și Educație</h2>
-                </div>
-                <p class="lead-text">
-                    Utilizarea AI în educație ridică întrebări etice complexe pe care profesorul
-                    modern trebuie să le cunoască, să le discute cu elevii și să le abordeze
-                    proactiv în clasă.
-                </p>
-                <div class="challenge-grid">
-                    <article class="challenge-card reveal">
-                        <h3>Integritate academică și fraudă</h3>
-                        <p>
-                            AI poate scrie teme, eseuri sau rezolva probleme de programare. Cum
-                            distingem munca elevului de output-ul AI? Soluție: proiecte orale,
-                            procese documentate, reflecții personale și evaluări în clasă.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Confidențialitatea datelor elevilor</h3>
-                        <p>
-                            Nu introduce date personale ale elevilor (nume, vârstă, rezultate) în
-                            chatbot-uri publice. Datele trimise la servere externe pot fi stocate și
-                            utilizate pentru antrenare. Folosește date anonimizate.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Bias și discriminare algoritmică</h3>
-                        <p>
-                            Modelele AI sunt antrenate pe date istorice care conțin prejudecăți. Ele
-                            pot reproduce stereotipuri de gen, rasă sau cultură. Verifică critic
-                            orice material generat înainte de a-l folosi în clasă.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Dependența cognitivă</h3>
-                        <p>
-                            Utilizarea excesivă a AI poate reduce capacitatea elevilor de a gândi
-                            independent și de a rezolva probleme fără asistență digitală. Impune
-                            zone „AI-free" în curriculum.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Drept de autor și proprietate intelectuală</h3>
-                        <p>
-                            Conținutul generat de AI poate reproduce fragmente din opere protejate.
-                            Imaginile AI pot semăna cu stilul unor artiști vii. Educă elevii despre
-                            citare, atribuire și drepturile digitale.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Transparență și responsabilitate</h3>
-                        <p>
-                            Elevii și părinții au dreptul să știe când AI este folosit în procesul
-                            educațional. Declară utilizarea AI în materiale, evaluări și feedback.
-                            Transparența construiește încredere.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Acces echitabil (Digital Divide)</h3>
-                        <p>
-                            Nu toți elevii au acces la internet rapid, dispozitive performante sau
-                            conturi premium AI. Proiectează activități care pot funcționa și fără AI
-                            sau cu versiuni gratuite.
-                        </p>
-                    </article>
-                    <article class="challenge-card reveal">
-                        <h3>Dezinformare și halucinații AI</h3>
-                        <p>
-                            Modelele AI produc uneori informații false cu o încredere aparentă.
-                            Antrenează elevii să verifice orice afirmație AI folosind surse primare
-                            și să nu accepte răspunsuri fără gândire critică.
-                        </p>
-                    </article>
-                </div>
-                <div class="ethics-box reveal">
-                    <h3>Regula de aur pentru profesori</h3>
-                    <p>
-                        Folosește AI ca pe un asistent inteligent, nu ca pe un oracol infailibil.
-                        Verifică, adaptează, personalizează. Responsabilitatea pedagogică rămâne a
-                        ta.
-                    </p>
-                </div>
-            </section>
-        </main>
-
-        <script src="app.js"></script>
-    </body>
+    <script src="app.js"></script>
+  </body>
 </html>
