@@ -435,6 +435,10 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+#notebooklm .grid-two {
+  grid-auto-rows: max-content;
+}
+
 .list-clean {
   margin: 0;
   padding-left: 18px;
