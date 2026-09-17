@@ -1,6 +1,7 @@
 # AI for Teachers - GitHub Pages
 
 Acest repository contine pagina workshopului pentru profesori.
+https://maidacencoanastasia.github.io/AI_for_teachers/ 
 
 ## Continut
 
